@@ -17,7 +17,8 @@ export const authOptions = {
             const existing = await User.findOne({ email: profile.email });
 
             if (!existing) {
-                const isAdmin = profile.email === process.env.ADMIN_EMAIL;
+                const adminEmails = (process.env.ADMIN_EMAILS || '').split(',').map(e => e.trim().toLowerCase());
+                const isAdmin = adminEmails.includes(profile.email.toLowerCase());
                 await User.create({
                     name:   profile.name,
                     email:  profile.email,
