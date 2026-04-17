@@ -1,0 +1,100 @@
+.main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #3a4a02;
+}
+
+.header p {
+    color: #5F7103;
+    font-size: 1.1rem;
+}
+
+.banner {
+    background: #1a2030;
+    border: 1px solid #405080;
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    color: #80b0e0;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.banner a {
+    color: #c8a96e;
+    text-decoration: underline;
+    margin-left: 0.3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: linear-gradient(180deg, #8A9E1A 0%, #5F7103 40%, #3a4a02 100%);
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(58, 74, 2, 0.35);
+}
+
+.imageWrap {
+    position: relative;
+    height: 180px;
+}
+
+.cardBody {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.meta {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.foodTag, .postTag, .subTag {
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.foodTag { background: rgba(253, 246, 225, 0.2); color: #FDF6E1; }
+.postTag { background: rgba(253, 246, 225, 0.2); color: #FDF6E1; }
+.subTag  { background: rgba(253, 246, 225, 0.2); color: #FDF6E1; }
+
+.cardBody h2 {
+    color: #FDF6E1;
+    font-size: 1.15rem;
+    line-height: 1.4;
+}
+
+.date {
+    color: #d4e0a0;
+    font-size: 0.8rem;
+}

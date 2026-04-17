@@ -1,0 +1,66 @@
+.userArea {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 2px solid #3a4a02;
+}
+
+.name {
+    color: #FDF6E1;
+    font-size: 0.9rem;
+}
+
+.adminLink {
+    color: #FDF6E1;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.25rem 0.6rem;
+    border: 1px solid #FDF6E1;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.adminLink:hover {
+    color: #1e2a00;
+    -webkit-text-fill-color: #1e2a00;
+    border-color: #1e2a00;
+    background: transparent;
+}
+
+.signInBtn,
+.signOutBtn {
+    background: transparent;
+    border: 1px solid #FDF6E1;
+    color: #FDF6E1;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.signInBtn:hover,
+.signOutBtn:hover {
+    color: #1e2a00;
+    -webkit-text-fill-color: #1e2a00;
+    border-color: #1e2a00;
+    background: transparent;
+}
+
+.pendingBadge {
+    background: #eef0d8;
+    border: 1px solid #5F7103;
+    color: #5F7103;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}

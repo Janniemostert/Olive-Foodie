@@ -1,0 +1,369 @@
+﻿.main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.main h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #3a4a02;
+}
+
+.main h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #3a4a02;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #b0c45a;
+    margin: 2.5rem 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.field label {
+    color: #5F7103;
+    font-size: 0.9rem;
+}
+
+.field input,
+.field textarea {
+    background: #f0f4d8;
+    border: 1px solid #b0c45a;
+    border-radius: 6px;
+    color: #3a4a02;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+.field textarea {
+    resize: vertical;
+}
+
+.switches {
+    display: flex;
+    gap: 2rem;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #3a4a02;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.ingredients h3 {
+    color: #5F7103;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.modeToggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+    color: #5F7103;
+    font-size: 0.85rem;
+}
+
+.modeBtn {
+    background: #f0f4d8;
+    border: 1px solid #b0c45a;
+    color: #8A9E1A;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.modeBtnActive {
+    background: #d4e0a0;
+    border-color: #5F7103;
+    color: #5F7103;
+    font-weight: 600;
+}
+
+.ingredientsTextarea {
+    background: #f0f4d8;
+    border: 1px solid #b0c45a;
+    border-radius: 6px;
+    color: #3a4a02;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+    font-family: inherit;
+    width: 100%;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.ingredientRow {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+.ingredientRow select,
+.ingredientRow input {
+    background: #f0f4d8;
+    border: 1px solid #b0c45a;
+    border-radius: 6px;
+    color: #3a4a02;
+    padding: 0.5rem 0.6rem;
+    font-size: 0.9rem;
+}
+
+.ingredientRow select { flex: 2; }
+.ingredientRow input  { flex: 1; }
+
+.addBtn {
+    background: transparent;
+    border: 1px dashed #5F7103;
+    color: #5F7103;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
+}
+
+.removeBtn {
+    background: transparent;
+    border: none;
+    color: #b02020;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submitBtn {
+    background: #5F7103;
+    color: #FDF6E1;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+.submitBtn:hover {
+    background: #3a4a02;
+}
+
+.ingredientLibForm {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ingredientLibForm input {
+    background: #f0f4d8;
+    border: 1px solid #b0c45a;
+    border-radius: 6px;
+    color: #3a4a02;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+}
+
+.error {
+    color: #b02020;
+    background: #fde8e8;
+    border: 1px solid #b02020;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+}
+
+.success {
+    color: #1e6e2a;
+    background: #e8f5e0;
+    border: 1px solid #1e6e2a;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Toggle switch */
+.switchRow {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.switchLabel {
+    color: #5F7103;
+    font-size: 0.9rem;
+    min-width: 120px;
+}
+
+.switchHint {
+    color: #8A9E1A;
+    font-size: 0.85rem;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggleSlider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #b0c45a;
+    border-radius: 24px;
+    transition: 0.2s;
+}
+
+.toggleSlider:before {
+    position: absolute;
+    content: '';
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #8A9E1A;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.toggle input:checked + .toggleSlider {
+    background-color: #5F7103;
+}
+
+.toggle input:checked + .toggleSlider:before {
+    background-color: #FDF6E1;
+    transform: translateX(20px);
+}
+
+/* Submit row */
+.submitRow {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.draftBtn {
+    background: #f0f4d8;
+    color: #5F7103;
+    border: 1px solid #6a5800;
+}
+
+.draftBtn:hover {
+    background: #3a3520;
+}
+
+/* Ingredient card (wraps row + prep methods) */
+.ingredientCard {
+    background: #FDF6E1;
+    border: 1px solid #b0c45a;
+    border-radius: 8px;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+/* Prep method chip buttons */
+.prepMethods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.prepLabel {
+    color: #8A9E1A;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.prepChip {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    border: 1px solid #b0c45a;
+    color: #8A9E1A;
+    background: #f0f4d8;
+    user-select: none;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.prepChip:hover {
+    border-color: #5F7103;
+    color: #5F7103;
+}
+
+.prepChipActive {
+    background: #d4e0a0;
+    border-color: #5F7103;
+    color: #5F7103;
+    font-weight: 600;
+}
+
+/* Prep methods collapsible */
+.prepDetails {
+    margin-top: 0.2rem;
+}
+
+.prepSummary {
+    color: #5F7103;
+    font-size: 0.82rem;
+    cursor: pointer;
+    list-style: none;
+    padding: 3px 0;
+    user-select: none;
+}
+
+.prepSummary::-webkit-details-marker { display: none; }
+
+.prepSummary::before {
+    content: '▶ ';
+    font-size: 0.7rem;
+    margin-right: 4px;
+    transition: transform 0.15s;
+}
+
+details[open] .prepSummary::before {
+    content: '▼ ';
+}
+
+.prepDetails .prepMethods {
+    margin-top: 0.5rem;
+    padding-left: 0.2rem;
+}
+

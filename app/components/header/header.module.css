@@ -1,0 +1,141 @@
+.headerWrap {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+/* ── Top auth bar ─────────────────────────────────── */
+.authBar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .authBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.4rem 10%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* ── Main logo + nav row ──────────────────────────── */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0.5rem 10% 0.75rem;
+  }
+}
+
+/* ── Nav ──────────────────────────────────────────── */
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #1e2a00;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav a:hover,
+.nav a:active {
+  color: #3a4a02;
+  -webkit-text-fill-color: #3a4a02;
+}
+
+/* Mobile: hide nav, show hamburger */
+.nav {
+  display: none;
+}
+
+.mobileMenuWrap {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+
+  .mobileMenuWrap {
+    display: none;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  text-decoration: none;
+  color: #FDF6E1;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logoImg {
+  position: relative;
+  width: 180px;
+  height: 90px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .logoImg {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logoImg {
+    width: 260px;
+    height: 130px;
+  }
+}
+
+.logo img {
+  object-fit: contain;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.logoName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: 0.1rem;
+  background: linear-gradient(90deg, #5F7103, #8A9E1A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logoSlogan {
+  font-size: 0.75rem;
+  font-weight: normal;
+  text-transform: lowercase;
+  letter-spacing: 0.05rem;
+  color: #C8C5B0;
+  -webkit-text-fill-color: #C8C5B0;
+}

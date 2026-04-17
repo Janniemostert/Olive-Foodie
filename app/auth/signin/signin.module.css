@@ -1,0 +1,47 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.card {
+    background: #1d1a16;
+    border: 1px solid #3a3530;
+    border-radius: 12px;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.card h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #ddd6cb;
+}
+
+.card p {
+    color: #a09080;
+    margin-bottom: 2rem;
+}
+
+.googleBtn {
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0 auto;
+    transition: background 0.2s;
+}
+
+.googleBtn:hover {
+    background: #f0f0f0;
+}

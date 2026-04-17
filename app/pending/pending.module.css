@@ -1,0 +1,117 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.card {
+    background: #1d1a16;
+    border: 1px solid #3a3530;
+    border-radius: 12px;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.card h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ddd6cb;
+}
+
+.card p {
+    color: #a09080;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.contact a {
+    color: #c8a96e;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    background: #1a2f1a;
+    border: 1px solid #50a050;
+    color: #70d070;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.badgeSuspended {
+    background: #3a2010;
+    border-color: #c07030;
+    color: #e09050;
+}
+
+.badgeInactive {
+    background: #2a1a3a;
+    border-color: #8050c0;
+    color: #a070e0;
+}
+
+.termsBox {
+    background: #151210;
+    border: 1px solid #3a3530;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.termsBox h2 {
+    font-size: 1rem;
+    color: #c8a96e;
+    margin-bottom: 0.6rem;
+}
+
+.termsBox p {
+    font-size: 0.85rem;
+    color: #7a7060;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.browseSection {
+    border-top: 1px solid #3a3530;
+    padding-top: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.browseSection p {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.browseLinks {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.browseBtn {
+    background: #2a2520;
+    border: 1px solid #c8a96e;
+    color: #c8a96e;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.15s;
+}
+
+.browseBtn:hover {
+    background: #3a3020;
+}
